@@ -13,7 +13,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   background-color: #f1f1f1;
-
+  background-image: url("../img/nyc_bw.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center; 
