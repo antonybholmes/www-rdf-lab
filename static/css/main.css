@@ -11,29 +11,34 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
   transition: 0.5s;
   width: 100%;
   top: 0;
   width: 100%;
   top: 0;
   left: 0;
-  padding: 20px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  padding: 50px;
   opacity: 1;
   z-index: 100;
+  
+  background-image: url("../images/nyc_night_2.jpg"); /* The image used */
+  height: 500px; /* You must set a specified height */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  color : rgba(255, 255, 255, 0.9);
 }
 
 .logo-link {
-    font-size: 1.5rem;
-    color: rgba(0, 102, 153, 0.5);
+    color : rgba(255, 255, 255, 0.9);
+    font-size: 2rem;
     text-decoration: none;
     font-weight: 300; 
     letter-spacing: 0.5rem;
 }
 
 .nav-link {
-  color: rgb(64, 64, 64);
+  color : rgba(255, 255, 255, 0.9);
   text-decoration: none;
   transition: color 0.4s ease-in-out;
   margin-right: 1rem;
@@ -41,6 +46,18 @@ body {
 
 .nav-link:hover {
   color: rgb(200, 200, 200);
+}
+
+.team {
+  background-color: white;
+  transition: opacity 1s, background-color 1s;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.team:hover {
+  background-color: rgba(0, 0, 255, 0.05);
+  opacity: 1;
 }
 
 .logo {
@@ -58,6 +75,10 @@ body {
 }
 
 .flex-4x {
+    flex: 4;
+}
+
+.flex-8x {
     flex: 4;
 }
 
@@ -92,10 +113,10 @@ body {
 
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
   width: 100%;
   margin: auto;
-  text-align: center;
+
 }
 
 
