@@ -2,31 +2,38 @@
 
 body { 
   margin: 0;
-  font-family: 'Source Sans Pro', Lato, Raleway, Arial, Helvetica, sans-serif;
-  font-size: 14pt;
+  font-family: Poppins, Raleway, Arial, Helvetica, sans-serif;
+  font-size: 12pt;
   font-weight: 400;
+  color: #52527a;
+}
+
+.navbar-bg {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 500px;
+    /* background-image: url("../images/geo.png"); */
+    /* background-position: top; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-attachment: fixed; */
+    
+    background: linear-gradient(90deg, rgba(0,102,255,1) 0%, rgba(85,221,255,1) 100%);
 }
 
 .navbar {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   transition: 0.5s;
   width: 100%;
   top: 0;
-  width: 100%;
-  top: 0;
   left: 0;
-  padding: 20px;
-  opacity: 1;
-  z-index: 100;
-  
-  background-image: url("../images/nyc_night_2.jpg"); /* The image used */
-  height: 500px; /* You must set a specified height */
-  background-position: top; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover;
-  color : rgba(255, 255, 255, 0.9);
+  padding: 3rem;
 }
 
 .logo-link {
@@ -38,14 +45,14 @@ body {
 }
 
 .nav-link {
-  color : rgba(255, 255, 255, 0.9);
-  text-decoration: none;
-  transition: color 0.4s ease-in-out;
-  margin-right: 1rem;
+    color : rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    transition: color 0.5s ease-in-out;
+    margin-right: 2rem;
 }
 
 .nav-link:hover {
-  color: rgb(200, 200, 200);
+    color : rgba(255, 255, 255, 0.5);
 }
 
 .team {
@@ -87,18 +94,16 @@ body {
 }
 
 .footer-header {
-    color: rgba(255, 0, 0, 0.6);
     text-transform: uppercase; 
-    letter-spacing: 0.2rem; 
+    letter-spacing: 0.1rem; 
     font-weight: 700;
     padding-bottom: 20px;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
 }
 
 .footer-link {
-    color: rgba(0, 0, 0, 0.8);
-    padding-bottom: 20px;
-    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    font-size: 0.9rem;
 }
 
 .footer {
@@ -113,14 +118,59 @@ body {
 
 
 .card {
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
-  width: 100%;
-  margin: auto;
-
+    padding: 2rem; 
+    border-radius: 2rem; 
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
+    width: 100%;
+    background-color: white;
 }
 
 
 @media screen and (max-width: 580px) {
   
   
+}
+
+
+.svg-header-angle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  fill: white;
+  /* set height to pixels if you want angle to change with screen width */
+}
+
+.svg-section-angle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  fill: white;
+}
+
+.info { 
+    left: 50% !important;
+    top: 45% !important;
+    transform: translate(-50%,0); 
+    position: absolute;
+    width: 60%;
+    height: 300px;
+    background-color: rgba(0, 51, 102, 0.8);
+    z-index: 1;
+    padding: 2rem;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.link {
+    color : #9999ff;
+    transition: color 0.5s ease-in-out;
+    text-decoration: none;
+}
+
+.link:hover {
+  color: #003366;
 }
