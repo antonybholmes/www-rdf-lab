@@ -45,14 +45,14 @@ body {
 }
 
 .nav-link {
-    color : rgba(255, 255, 255, 0.9);
+    color : rgba(255, 255, 255, 1);
     text-decoration: none;
     transition: color 0.5s ease-in-out;
     margin-right: 2rem;
 }
 
 .nav-link:hover {
-    color : rgba(255, 255, 255, 0.5);
+    color : rgba(255, 255, 255, 0.7);
 }
 
 .team {
