@@ -1,0 +1,1 @@
+python make_pubs.py >publications.html

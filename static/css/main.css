@@ -3,9 +3,9 @@
 body { 
   margin: 0;
   font-family: Poppins, Raleway, Arial, Helvetica, sans-serif;
-  font-size: 12pt;
+  font-size: 11pt;
   font-weight: 400;
-  color: #52527a;
+  color: rgba(82, 82, 122, 1);
 }
 
 .navbar-bg {
@@ -14,13 +14,13 @@ body {
     top: 0;
     left: 0;
     height: 500px;
-    /* background-image: url("../images/geo.png"); */
-    /* background-position: top; */
-    /* background-repeat: no-repeat; */
-    /* background-size: cover; */
-    /* background-attachment: fixed; */
+    background-image: url("../images/sky_bg_2.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     
-    background: linear-gradient(90deg, rgba(0,102,255,1) 0%, rgba(85,221,255,1) 100%);
+    /* background: linear-gradient(90deg, rgba(0,102,255,1) 0%, rgba(85,221,255,1) 100%); */
 }
 
 .navbar {
@@ -75,6 +75,7 @@ body {
 .col {
     flex-direction: column; 
     flex: 1;
+    z-index: 100;
 }
 
 .flex-2x {
@@ -95,9 +96,9 @@ body {
 
 .footer-header {
     text-transform: uppercase; 
-    letter-spacing: 0.1rem; 
-    font-weight: 700;
-    padding-bottom: 20px;
+    letter-spacing: 0.2rem; 
+    font-weight: 600;
+    padding-bottom: 1rem;
     font-size: 0.9rem;
 }
 
@@ -108,21 +109,21 @@ body {
 
 .footer {
     width: 100%;
-    border-top: solid 1px rgb(230, 230, 230);
-    background-color: rgb(250, 250, 250);
-    padding: 50px;
+    padding: 5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: relative;
 }
 
 
 .card {
     padding: 2rem; 
-    border-radius: 2rem; 
+    border-radius: 1rem; 
     box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
     width: 100%;
     background-color: white;
+    overflow: hidden;
 }
 
 
@@ -137,7 +138,7 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 250px;
+  height: 20vw;
   fill: white;
   /* set height to pixels if you want angle to change with screen width */
 }
@@ -147,9 +148,14 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 250px;
+  height: 20vw;
   fill: white;
 }
+
+.svg-alt-section-angle {
+    fill: rgba(0, 0, 255, 0.04);
+}
+
 
 .info { 
     left: 50% !important;
@@ -163,6 +169,55 @@ body {
     padding: 2rem;
     font-size: 1.2rem;
     color: white;
+}
+
+.section {
+    position: relative; 
+    width: 100%;
+}
+
+.header {
+    font-size: 2rem; 
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.header-2 {
+    font-size: 1.5rem;
+}
+
+.header-3 {
+    font-size: 1.2rem;
+}
+
+.section-header {
+    text-align: center;
+    margin-top: 150px;
+}
+
+.alt-section {
+    background-color: rgba(0, 0, 255, 0.04);
+}
+
+.pubs {
+    margin: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative;
+}
+
+.pub {
+    margin-bottom: 1rem;
+}
+
+.pub-title {
+    color : #9999ff;
+    font-size: 1.1rem;
+}
+
+.pub-journal-title {
+    font-size: 0.8rem;
+    color: rgba(82, 82, 122, 0.5);
 }
 
 .link {
