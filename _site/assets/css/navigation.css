@@ -1,0 +1,77 @@
+.angle {
+  width: 100%;
+  height: 4rem;
+  stroke-width: 0;
+  stroke: none;
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-size: 11pt;
+  font-family: Lato !important;
+  color: #0a0a0a;
+  font-weight: 400; }
+
+.navbar-top {
+  background-color: rgba(83, 98, 108, 0.95);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); }
+
+.nav-angle {
+  fill: rgba(83, 98, 108, 0.95);
+  height: 4rem; }
+
+.nav-links {
+  margin: 0;
+  padding: 0; }
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.95);
+  text-decoration: none;
+  transition: color 0.5s; }
+
+.nav-link:hover {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none; }
+
+.nav-link-active {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none; }
+
+.nav-link-active:hover {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none; }
+
+.navlogo-link {
+  font-family: "Cormorant Garamond";
+  font-size: 1.6rem;
+  color: white;
+  text-decoration: none;
+  transition: color 0.5s; }
+
+.navlogo-link:hover {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none; }
+
+.navbar-brand {
+  margin: 0;
+  padding: 0; }
+
+.base-nav-logo {
+  width: 4rem;
+  height: 4rem; }
+
+.nav-logo {
+  margin: 0;
+  font-family: "Cormorant Garamond";
+  font-size: 0.8rem;
+  background-color: #5599ff;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.nav-item-spacing {
+  padding-left: 2rem; }

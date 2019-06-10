@@ -1,0 +1,78 @@
+<!-- style="align-items: flex-end"-->
+
+{% assign page_url = page.url | replace: "/", "" | replace: ".html", "" %}
+
+<!-- <svg
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    class="angle nav-angle"
+    style="position: absolute"
+    preserveAspectRatio="none"
+    viewBox="0 0 100 10"
+  >
+    <polygon stroke-width="0" points="0,0 0,10 100,10 100,0" />
+  </svg> -->
+<div class="navbar-top fixed-top">
+  <div class="container d-none d-sm-block">
+    <div class="row">
+      <div class="col-sm m-0 p-0">
+        <nav class="navbar navbar-expand-sm m-0 p-0 justify-content-between">
+          <a href="/" class="navlogo-link">
+            <div class="base-nav-logo nav-logo">
+              <div style="margin: auto;">
+                <div>Polite</div>
+                <div>Investor</div>
+              </div>
+            </div>
+          </a>
+
+          <ul class="navbar-nav">
+            {% for item in site.data.navigation %} {% assign url = item.url |
+            replace: "/", "" %}
+
+            <li class="mx-4">
+              <a
+                href="{{ item.url }}"
+                class="nav-link {% if url == page_url %}nav-link-active{% endif %}"
+              >
+                {{ item.name }}
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+
+          <div class="base-nav-logo"></div>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-sm-none">
+    <div class="m-0 p-0">
+      <a href="/" class="navlogo-link">
+        <div class="base-nav-logo nav-logo">
+          <div style="margin: auto;">
+            <div>Polite</div>
+            <div>Investor</div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <nav class="navbar m-0 p-0">
+      <ul class="navbar-nav">
+        {% for item in site.data.navigation %} {% assign url = item.url |
+        replace: "/", "" %}
+
+        <li class="mx-4">
+          <a
+            href="{{ item.url }}"
+            class="nav-link {% if url == page_url %}nav-link-active{% endif %}"
+          >
+            {{ item.name }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</div>

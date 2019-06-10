@@ -1,0 +1,24 @@
+---
+---
+
+@import "main";
+
+$CELL-PADDING: 0.5rem;
+
+.table {
+    border-radius: $CELL-PADDING;
+    box-shadow: 0 0 8px $SHADOW-COLOR;
+    //overflow: hidden;
+}
+
+.table-header {
+    //background-color: blue;
+    //color: white;
+    font-weight: 600;
+    //padding: $CELL-PADDING;
+    border-top: solid 1px rgb(240, 240, 240);
+}
+
+.table-cell {
+    padding: $CELL-PADDING;
+}

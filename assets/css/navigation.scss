@@ -1,0 +1,99 @@
+---
+---
+
+@import "main";
+
+$NAV-PADDING: 1rem;
+$LOGO-SIZE: 4rem;
+$NAV-COLOR: rgba(83, 98, 108, 0.95);
+
+$nav-link-ALT-COLOR: rgba(255, 255, 255, 0.6); 
+
+.navbar-top {
+  background-color: $NAV-COLOR;
+  //padding-top: 0.5rem;
+  //padding-bottom: 0.5rem;
+  box-shadow: 0 0 8px $SHADOW-COLOR;
+}
+
+.nav-angle {
+    fill: $NAV-COLOR;
+    height: $LOGO-SIZE;
+}
+
+.nav-links {
+  //background-color: rgba(245, 245, 245, 0.95);
+  margin: 0;
+  padding: 0; //padding: 0.6rem;
+  //padding-top: $NAV-PADDING;
+  //   box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.95); // white; //$NAV-COLOR;
+  text-decoration: none;
+  transition: color $ANIMATION-TIME-S;
+  //margin-right: 0.5rem;
+  //font-weight: 600;
+  //letter-spacing: 0.1rem;
+  //font-size: 1.1rem;
+}
+
+.nav-link:hover {
+  color: $nav-link-ALT-COLOR; //$LOGO-BACKGROUND;
+  text-decoration: none;
+}
+
+.nav-link-active {
+  color: $nav-link-ALT-COLOR;
+  text-decoration: none;
+}
+
+.nav-link-active:hover {
+  color: $nav-link-ALT-COLOR; //$LOGO-BACKGROUND;
+  text-decoration: none;
+}
+
+.navlogo-link {
+  font-family: "Cormorant Garamond";
+  font-size: 1.6rem;
+  //   letter-spacing: 0.1rem;
+  color: white;
+  text-decoration: none;
+  transition: color $ANIMATION-TIME-S;
+}
+
+.navlogo-link:hover {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
+.navbar-brand {
+  margin: 0;
+  padding: 0;
+}
+
+.base-nav-logo {
+    width: $LOGO-SIZE;
+    height: $LOGO-SIZE;
+}
+
+.nav-logo {
+  margin: 0;
+  font-family: "Cormorant Garamond";
+  font-size: 0.8rem;
+ 
+  background-color: $LOGO-BACKGROUND;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav-item {
+  //padding-right: 1rem;
+}
+
+.nav-item-spacing {
+    padding-left: 2rem;
+}

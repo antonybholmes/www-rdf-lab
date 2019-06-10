@@ -1,0 +1,70 @@
+---
+---
+
+@import "main";
+
+$COPYRIGHT-COLOR:  rgb(150, 150, 150);
+
+$FOOTER-SPACE: 5rem;
+$FOOTER-BACKGROUND: rgb(250, 250, 250);
+
+.footer-angle {
+  margin-top: $SPACING;
+  fill: $FOOTER-BACKGROUND;
+}
+
+footer {
+  border-top: solid 1px rgb(240, 240, 240);
+  background-color: $FOOTER-BACKGROUND;
+  margin: 0;
+  padding: 0;
+  margin-top: $SPACING;
+  padding-top: $SPACING;
+  padding-bottom: $SPACING;
+}
+
+.footer-heading {
+  text-transform: uppercase;
+}
+
+.footer-links-heading {
+  // text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.footer-link {
+  margin-bottom: 0.2rem;
+}
+
+.footer-copyright {
+  color: $COPYRIGHT-COLOR;
+  margin-top: 5rem;
+  font-size: 0.8rem;
+}
+
+.footer-copyright-link {
+  color: $COPYRIGHT-COLOR;
+  text-decoration: none;
+  border-bottom: solid 1px white;
+  transition: border-bottom $ANIMATION-TIME-S;
+}
+
+.footer-copyright-link:hover {
+  color: $COPYRIGHT-COLOR;
+  text-decoration: none;
+  border-bottom: solid 1px $COPYRIGHT-COLOR;
+}
+
+.footer-logo {
+  font-family: "Cormorant Garamond";
+  font-size: 0.9rem;
+  width: 4rem;
+  height: 4rem;
+  padding: 0.5rem;
+  background-color: $LOGO-BACKGROUND;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

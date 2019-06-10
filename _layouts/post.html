@@ -1,0 +1,32 @@
+---
+layout: standard-page
+---
+
+<div class="row">
+  <div class="col-sm">
+    <h1>{{ page.title }}</h1>
+
+    <div class="post-date">
+      {{ page.date | date: "%B %d, %Y" }}
+
+      {% assign author = site.people | where: 'short_name', page.author | first
+      %} {% if author %} -
+      <a href="{{ author.url }}" class="date-url">{{ author.name }}</a
+      >{% endif %}
+    </div>
+
+    <!-- {% for category in site.categories %}
+<h3>{{ category[0] }}</h3>
+<ul>
+  {% for post in category[1] %}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
+{% endfor %} -->
+    <div class="post-content">
+      {{ content }}
+    </div>
+  </div>
+</div>

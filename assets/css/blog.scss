@@ -1,0 +1,57 @@
+---
+---
+
+@import "main";
+
+$DATE-COLOR:  rgb(150, 150, 150);
+
+.latest-posts {
+    //font-family: 'Cormorant Garamond'; 
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.post-title {
+    //font-family: 'Cormorant Garamond'; 
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.post-title-url {
+    color: $TEXT-COLOR;
+    text-decoration: none;
+    border-bottom: solid 1px white;
+    transition: border-bottom 0.5s;
+}
+
+.post-title-url:hover {
+    color: $TEXT-COLOR;
+    text-decoration: none;
+    border-bottom: solid 1px $TEXT-COLOR;
+}
+
+.post-date {
+    font-size: 0.9rem;
+    color: $DATE-COLOR;
+}
+
+.post-excerpt {
+    margin-top: 0.5rem;
+}
+
+.post-content {
+    margin-top: 1rem;
+}
+
+.date-url {
+    color: $DATE-COLOR;
+    text-decoration: none;
+    border-bottom: solid 1px white;
+    transition: border-bottom $ANIMATION-TIME-S;
+}
+
+.date-url:hover {
+    color: $DATE-COLOR;
+    text-decoration: none;
+    border-bottom: solid 1px $DATE-COLOR;
+}

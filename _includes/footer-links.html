@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm m-0 p-0 justify-content-between">
+      <div class="footer-links-heading">Start Here</div>
+
+      {% for item in site.data.footer.start-here %}
+      <div class="footer-link">
+        <a href="{{ item.url }}" class="quick-link">
+          {{ item.name }}
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="col-sm m-0 p-0">
+      <div class="footer-links-heading">Recommendations</div>
+
+      {% for item in site.data.footer.recommendations %}
+      <div class="footer-link">
+        <a href="{{ item.url }}" class="quick-link">
+          {{ item.name }}
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="col-sm m-0 p-0">
+      <div class="footer-links-heading">Social</div>
+
+      {% for item in site.data.footer.social %}
+      <div class="footer-link">
+        <a href="{{ item.url }}" class="quick-link">
+          {{ item.name }}
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="col-sm m-0 p-0">
+      <div class="footer-links-heading">Calculators</div>
+
+      {% for item in site.data.footer.calculators %}
+      <div class="footer-link">
+        <a href="{{ item.url }}" class="quick-link">
+          {{ item.name }}
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

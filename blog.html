@@ -1,0 +1,26 @@
+---
+layout: base-page
+title: Blog
+---
+
+<!-- <h1>Latest Posts</h1> -->
+
+{% for post in site.posts %}
+<div class="row" style="margin-bottom: 2rem;">
+  <div class="col-sm m-0 p-0">
+    <h2>
+      <a href="{{ post.url }}" class="post-title-url">{{ post.title }}</a>
+    </h2>
+    <div class="post-date">
+      {{ post.date | date: "%B %d, %Y" }}
+    </div>
+    <div class="post-excerpt">{{ post.excerpt }}</div>
+    <div>
+      <a href="{{ post.url }}" class="quick-link"
+        >Learn more
+        <i class="fas fa-angle-right" style="margin-left: 0.5rem;"></i
+      ></a>
+    </div>
+  </div>
+</div>
+{% endfor %}

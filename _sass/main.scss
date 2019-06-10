@@ -1,0 +1,35 @@
+$TEXT-COLOR: rgb(10, 10, 10);
+$ALT-TEXT-COLOR: rgb(160, 160, 160);
+$SHADOW-COLOR: rgba(0, 0, 0, 0.2);
+$PAGE-MARGIN-TOP: 12em;
+$LOGO-BACKGROUND: #5599ff;
+$COPYRIGHT-COLOR: $ALT-TEXT-COLOR;
+
+$SPACING: 5rem;
+
+$ANIMATION-TIME-S: 0.5s;
+
+$ANGLE-SHAPE-H: 4rem;
+
+.angle {
+  width: 100%;
+  height: $ANGLE-SHAPE-H;
+  stroke-width: 0;
+  stroke: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white; // rgba(0, 0, 255, 0.05); // white;
+  font-size: 11pt;
+  font-family: Lato !important;
+  color: $TEXT-COLOR;
+  font-weight: 400;
+}
+
+// h1 {
+//   font-family: "Cormorant Garamond";
+// }

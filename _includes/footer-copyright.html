@@ -1,0 +1,28 @@
+<div class="container footer-copyright">
+  <div class="row">
+    <div class="col-sm m-0 p-0">
+      <img src="assets/images/cumc.png" style="height: 50px"/>
+    </div>
+  </div> 
+  <div class="row" style="margin-top: 2rem;">
+    {% include footer-copyright-disclaimer.html %} 
+
+    {% include footer-copyright-privacy.html %} 
+  </div>
+  <div class="row" style="margin-top: 5rem;">
+    <div class="col-sm m-0 p-0">
+      {% for item in site.data.footer.copyright.links %} 
+      {% if forloop.first == false %} | {% endif %}
+
+      <a href="{{ item.url }}" class="footer-copyright-link">
+        {{ item.name }}
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="row" style="margin-top: 1rem;">
+    <div class="col-sm m-0 p-0">
+      Copyright &copy; {{ site.time | date: "%Y" }} The Polite Investor
+    </div>
+  </div>
+</div>

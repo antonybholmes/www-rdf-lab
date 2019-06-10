@@ -1,0 +1,10 @@
+- name: Disclaimer
+  url: /disclaimer
+- name: Privacy Policy
+  url: /privacy
+- name: Advertise With Us
+  url: /advertise
+- name: Support The Site
+  url: /support
+- name: Contact Us
+  url: /contact

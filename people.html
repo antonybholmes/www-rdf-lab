@@ -1,0 +1,16 @@
+---
+layout: base-page
+title: People
+---
+
+{% for person in site.people %}
+<div class="row" style="margin-bottom: 2rem;">
+  <div class="col-sm m-0 p-0">
+    <h2>
+      <a href="{{ person.url }}" class="quick-link">{{ person.name }}</a>
+    </h2>
+    <h3>{{ person.position }}</h3>
+    <p>{{ person.content | markdownify }}</p>
+  </div>
+</div>
+{% endfor %}
